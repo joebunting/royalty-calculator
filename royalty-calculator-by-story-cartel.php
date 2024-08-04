@@ -17,6 +17,8 @@ if (!defined('ABSPATH')) {
 define('ROYALTY_CALCULATOR_VERSION', filemtime(__FILE__));
 define('ROYALTY_CALCULATOR_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('ROYALTY_CALCULATOR_PLUGIN_URL', plugin_dir_url(__FILE__));
+define('ROYALTY_CALCULATOR_GITHUB_REPO', 'joebunting/royalty-calculator');
+define('ROYALTY_CALCULATOR_PLUGIN_SLUG', 'royalty-calculator-by-story-cartel');
 
 // Include necessary files
 require_once ROYALTY_CALCULATOR_PLUGIN_DIR . 'includes/shortcodes.php';
@@ -51,3 +53,19 @@ function royalty_calculator_load_textdomain() {
     load_plugin_textdomain('royalty-calculator', false, dirname(plugin_basename(__FILE__)) . '/languages/');
 }
 add_action('plugins_loaded', 'royalty_calculator_load_textdomain');
+
+// Update function
+function royalty_calculator_github_updater() {
+    if (!class_exists('WP_GitHub_Updater')) {
+        include_once plugin_dir_path(__FILE__) . 'updater.php';
+    }
+    if (class_exists('WP_GitHub_Updater')) {
+        $updater = new WP_GitHub_Updater(array(
+            'slug' => ROYALTY_CALCULATOR_PLUGIN_SLUG,
+            'plugin' => plugin_basename(__FILE__),
+            'github_repo' => ROYALTY_CALCULATOR_GITHUB_REPO,
+            'access_token' => '', // Optional: for private repos
+        ));
+    }
+}
+add_action('init', 'royalty_calculator_github_updater');

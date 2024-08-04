@@ -17,6 +17,9 @@ Use the shortcode `[royalty_calculator]` to display the royalty calculator on an
 - WordPress 5.0 or higher
 - PHP 7.0 or higher
 
+## Automatic Updates
+This plugin supports automatic updates from the GitHub repository. Make sure your WordPress installation allows automatic updates for plugins.
+
 ## Changelog
 ### 1.0.1
 - Initial release

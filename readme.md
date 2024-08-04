@@ -24,6 +24,10 @@ This plugin supports automatic updates from the GitHub repository. Make sure you
 ### 1.0.1
 - Initial release
 
+### 1.0.2
+- Added automatic update functionality from GitHub repository
+- Added link to "Book Sales Tactics" class in calculator results
+
 ## Support
 For support, email support@storycartel.com.
 

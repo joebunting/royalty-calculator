@@ -21,9 +21,13 @@ Royalty Calculator by Story Cartel is a free, open-source WordPress plugin that 
 Use the shortcode `[royalty_calculator]` to display the royalty calculator on any page or post. Alternatively, you can use the shortcode `[royalty_calculator type="kdp"]` to display the KDP royalty calculator on any page or post.
 
 == Changelog ==
+= 1.0.2 =
+* Added automatic update functionality from GitHub repository
+* Added link to "Book Sales Tactics" class in calculator results
+
 = 1.0.1 =
 * Initial release
 
 == Upgrade Notice ==
-= 1.0.1 =
-This is the initial release of the Royalty Calculator by Story Cartel plugin.
+= 1.0.2 =
+This update adds automatic update functionality and a link to our "Book Sales Tactics" class in the calculator results.

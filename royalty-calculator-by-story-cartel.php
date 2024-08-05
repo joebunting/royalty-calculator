@@ -18,7 +18,7 @@ define('ROYALTY_CALCULATOR_VERSION', filemtime(__FILE__));
 define('ROYALTY_CALCULATOR_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('ROYALTY_CALCULATOR_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('ROYALTY_CALCULATOR_GITHUB_REPO', 'joebunting/royalty-calculator');
-define('ROYALTY_CALCULATOR_PLUGIN_SLUG', 'royalty-calculator-by-story-cartel');
+define('ROYALTY_CALCULATOR_PLUGIN_SLUG', 'royalty-calculator');
 
 // Include necessary files
 require_once ROYALTY_CALCULATOR_PLUGIN_DIR . 'includes/shortcodes.php';
@@ -61,10 +61,10 @@ function royalty_calculator_github_updater() {
     }
     if (class_exists('WP_GitHub_Updater')) {
         $updater = new WP_GitHub_Updater(array(
-            'slug' => ROYALTY_CALCULATOR_PLUGIN_SLUG,
+            'slug' => 'royalty-calculator',
             'plugin' => plugin_basename(__FILE__),
-            'github_repo' => ROYALTY_CALCULATOR_GITHUB_REPO,
-            'access_token' => '', // Optional: for private repos
+            'github_repo' => 'joebunting/royalty-calculator',
+            'access_token' => '' // Optional: for private repos
         ));
     }
 }

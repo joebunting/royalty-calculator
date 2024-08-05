@@ -47,6 +47,9 @@ function general_royalty_calculator_html() {
 
             <button type="button" id="calculateButton">Calculate Royalties</button>
         </form>
+        <div class="twp-attribution hidden">
+            <p>Powered by <a href="https://thewritepractice.com" target="_blank">The Write Practice</a></p>
+        </div>
         <div id="result" class="result-box hidden"></div>
     </div>
     <?php
@@ -76,6 +79,9 @@ function kdp_royalty_calculator_html() {
 
             <button type="button" id="kdpCalculateButton">Calculate KDP Royalties</button>
         </form>
+        <div class="twp-attribution hidden">
+            <p>Powered by <a href="https://thewritepractice.com" target="_blank">The Write Practice</a></p>
+        </div>
         <div id="kdpResult" class="result-box hidden"></div>
     </div>
     <?php

@@ -1,6 +1,10 @@
 jQuery(document).ready(function($) {
     console.log("Royalty calculator script loaded");
 
+    if (window.location.hostname !== 'thewritepractice.com') {
+        $(".twp-attribution").removeClass('hidden');
+    }
+
     function calculateRoyalties(formId, resultId, calculatorType) {
         console.log("Calculating royalties for " + calculatorType);
         var form = $("#" + formId);

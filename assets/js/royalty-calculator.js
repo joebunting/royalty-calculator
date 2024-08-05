@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
                             "<h3>Results:</h3>" +
                             "<p><i class='fas fa-money-bill-wave'></i> Estimated Total Royalties: <span class='result-value'>$" + response.data.totalRoyalty + "</span></p>" +
                             "<p><i class='fas fa-book'></i> Royalty Per Book: <span class='result-value'>$" + response.data.royaltyPerBook + "</span></p>" +
-                            "<p>Master book marketing with the <a href='https://thewritepractice.com/resources/book-sales-tactics/' target='_blank'>Book Sales Tactics class</a>. <a href='https://thewritepractice.com/resources/book-sales-tactics/' target='_blank'>Learn more here</a>.</p>"
+                            "<p>Master book marketing with the <a href='https://thewritepractice.com/resources/book-sales-tactics/' target='_blank'>Book Sales Tactics class here</a>."
                         );
                 } else {
                     $("#" + resultId)

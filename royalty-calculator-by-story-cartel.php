@@ -2,7 +2,7 @@
 /*
 Plugin Name: Royalty Calculator by Story Cartel
 Description: Calculate royalties for your book
-Version: 1.0.2
+Version: 1.0.3
 Author: Story Cartel
 Text Domain: royalty-calculator
 Domain Path: /languages

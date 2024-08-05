@@ -2,7 +2,7 @@
 /*
 Plugin Name: Royalty Calculator by Story Cartel
 Description: Calculate royalties for your book! Just insert the shortcode [royalty_calculator] or [royalty_calculator type="kdp"] into your post or page to use.
-Version: 1.0.3
+Version: 1.0.4
 Author: Story Cartel
 Text Domain: royalty-calculator
 Domain Path: /languages

@@ -3,7 +3,7 @@ Contributors: storycartel
 Tags: royalty, calculator, authors, books
 Requires at least: 5.0
 Tested up to: 6.2
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: CC BY-SA 4.0
 License URI: https://creativecommons.org/licenses/by-sa/4.0/
 
@@ -21,6 +21,9 @@ Royalty Calculator by Story Cartel is a free, open-source WordPress plugin that 
 Use the shortcode `[royalty_calculator]` to display the royalty calculator on any page or post. Alternatively, you can use the shortcode `[royalty_calculator type="kdp"]` to display the KDP royalty calculator on any page or post.
 
 == Changelog ==
+
+= 1.0.4 =
+- Added attribution link to the bottom of the calculator
 
 = 1.0.3 =
 * Fixed a bug with the updater
